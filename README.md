@@ -1,4 +1,4 @@
-# Weather API Project
+# AI Girlfriend
 ## For Grade 12 Computer Science
 This is an AI anime girlfriend whose hair changes color based on her mood. It's very epic and cool.
 
