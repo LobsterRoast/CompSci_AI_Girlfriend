@@ -12,7 +12,7 @@ Works on Windows and Linux. Developed specifically on/for Fedora Linux.
 -   Earlier .NET versions work too, but AI_Girlfriend.csproj needs to be updated to target earlier .NET versions.
 
 ## Installation
-Before you do anything, you must set the BAEI_KEY environment variable with an OpenAI key capable of running gpt-3.5-turbo.
+**Before you do anything, you must set the BAEI_KEY environment variable with an OpenAI key capable of running gpt-3.5-turbo.**
 ```bash
 git clone git@github.com:LobsterRoast/CompSci_AI_Girlfriend.git
 cd ./CompSci_AI_Girlfriend
