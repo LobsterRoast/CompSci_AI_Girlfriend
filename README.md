@@ -14,7 +14,7 @@ Works on Windows and Linux. Developed specifically on/for Fedora Linux.
 ## Installation
 **Before you do anything, you must set the BAEI_KEY environment variable with an OpenAI key capable of running gpt-3.5-turbo.**
 In Windows, you can set the BAEI_KEY variable with the following command:
-```
+```bat
 $env:BAEI_KEY = "my key here"
 ```
 Otherwise, if using Linux,
