@@ -13,7 +13,7 @@ namespace AI_Girlfriend;
 public partial class MainWindow : Window
 {
     public ReactiveCommand<Unit, Unit> SendMessage { get; }
-    AIClient client = new AIClient();
+    AIClient client;
     Dictionary<string, byte[]> moods = new Dictionary<string, byte[]>();
     SolidColorBrush hairBrush; 
     string sMood;
@@ -22,6 +22,13 @@ public partial class MainWindow : Window
     {
         // Initialize the window
         InitializeComponent();
+        // Initialize the AI
+        try {
+            client = new AIClient();
+        }
+        catch(ArgumentNullException e) {
+            ResponseBlock.Text = "Invalid API Key! Is the BAEI_KEY Environment Variable set correctly?";
+        }
         // Define the 4 respective hair colors for the 4 possible moods for the AI
         moods.Add("Happy", new byte[] { 100, 0, 255, 0 } );
         moods.Add("Sad", new byte[] { 100, 30, 130, 255 } );

@@ -5,7 +5,15 @@ using System.IO;
 namespace AIintegration {
     public class AIClient {
         // Initialize the chat client
-        ChatClient client = new(model: "gpt-3.5-turbo", apiKey: Environment.GetEnvironmentVariable("BAEI_KEY"));
+        ChatClient client;
+        public AIClient() {
+            try {
+            client = new(model: "gpt-3.5-turbo", apiKey: Environment.GetEnvironmentVariable("BAEI_KEY"));
+            }
+            catch(ArgumentNullException e) {
+                throw(e);
+            }
+        }
         ChatCompletion completion;
         // tokenizedText will hold a tokenized form of all AI responses so that the response can be easily manipulated
         string[] tokenizedText;
