@@ -16,7 +16,7 @@ Works on Windows and Linux. Developed specifically on/for Fedora Linux.
 ```bash
 git clone git@github.com:LobsterRoast/CompSci_AI_Girlfriend.git
 cd ./CompSci_AI_Girlfriend
-make # If you don't have make installed, run the command inside the Makefile
+make # If you don't have make installed, run the dotnet publish command inside the Makefile
 ```
 After installing, run the executable in the build directory
 
