@@ -31,6 +31,7 @@ After installing, run the executable in the build directory. If the exe doesn't 
 ```bash
 dotnet AI_Girlfriend.dll
 ```
+**The Windows executable doesn't like running from file explorer for some reason, so even if you're running the .exe rather than the .dll, you must run it from the command line.**
 
 
 **Note:** This targets  .NET 8.0 by default. You may need to edit AI_Girlfriend.csproj to target a different version of .NET depending on what works for you and your environment.
