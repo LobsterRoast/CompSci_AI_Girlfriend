@@ -15,7 +15,7 @@ Works on Windows and Linux. Developed specifically on/for Fedora Linux.
 **Before you do anything, you must set the BAEI_KEY environment variable with an OpenAI key capable of running gpt-3.5-turbo.**
 ```bash
 git clone git@github.com:LobsterRoast/CompSci_AI_Girlfriend.git
-cd ./CompSci_AI_Girlfriend
+cd CompSci_AI_Girlfriend
 make # If you don't have make installed, run the dotnet publish command inside the Makefile
 ```
 After installing, run the executable in the build directory
