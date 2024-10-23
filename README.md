@@ -24,7 +24,7 @@ export BAEI_KEY=my key here
 After setting the environment variable, run the following commands to install the program.
 ```bash
 git clone git@github.com:LobsterRoast/CompSci_AI_Girlfriend.git
-cd ./CompSci_AI_Girlfriend
+cd CompSci_AI_Girlfriend
 make # If you don't have make installed, run the dotnet publish command inside the Makefile
 ```
 After installing, run the executable in the build directory. If the exe doesn't work, open the terminal and run the following:
