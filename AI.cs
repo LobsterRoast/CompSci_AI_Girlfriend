@@ -8,7 +8,7 @@ namespace AIintegration {
         ChatClient client = new(model: "gpt-3.5-turbo", apiKey: Environment.GetEnvironmentVariable("BAEI_KEY"));
         ChatCompletion completion;
         // tokenizedText will hold a tokenized form of all AI responses so that the response can be easily manipulated
-        string[] tokenizedText = [];
+        string[] tokenizedText;
         // Create a new API Client using an API Key fetched from an environment variable
         public int SpeakToAI(string prompt, out string mood, out string output) {
             string printedText = "";
